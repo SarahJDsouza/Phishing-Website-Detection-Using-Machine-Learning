@@ -19,7 +19,12 @@ Each URL is processed into structured features capturing lexical characteristics
 Dataset source link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
 
 ## EDA
-![Alt text]("C:\Users\sarah\OneDrive\Desktop\threat.png")
+### Types of threats
+![Alt text]("threat.png")
+### Top Phishing TLDs
+![Alt text]("tld.png")
+### Feature Selection
+![Alt text]("top15.png")
 
 ## Model Comparison Table (After Threshold Tuning)
 
