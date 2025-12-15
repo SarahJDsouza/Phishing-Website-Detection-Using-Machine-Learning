@@ -18,7 +18,8 @@ Each URL is processed into structured features capturing lexical characteristics
 
 Dataset source link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
 
-
+## EDA
+![Alt text]("C:\Users\sarah\OneDrive\Desktop\threat.png")
 
 ## Model Comparison Table (After Threshold Tuning)
 
@@ -30,3 +31,34 @@ Dataset source link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+u
 | SVM (Linear)       | 0.9980   | 0.9982  | 0.997     | 0.999  | 0.998    | 0.9986            | -0.25          | 107                         | Strong separation; very low misclassification; threshold tuning slightly reduces FN. |
 | Random Forest      | 0.9993   | 0.999998| 0.999     | 0.999  | 0.999    | 0.9987            | 0.35           | 48                          | Ensemble captures complex patterns; highest overall performance; cost-sensitive ready. |
 | Ensemble (Voting)  | 0.9998   | 1.0000  | 0.999     | 0.999  | 0.999    | 0.9990            | 0.55           | 18                          | Best overall model; combines strengths of individual models; extremely low misclassification cost. |
+
+
+
+### Key Learnings and Outcomes
+
+- **Understanding Phishing Behavior**
+  - Scammers manipulate **URL structures** with long domains, raw IP addresses, and multiple subdomains.
+  - **Visual deception** tactics such as homograph attacks, obfuscation with special characters, and repeated patterns drive high similarity scores.
+  - **Content-based tricks** include hidden fields, external form submissions, and password inputs placed in unusual contexts.
+  - **Keyword baits** like “Bank,” “Pay,” and “Crypto” create urgency and lure users into disclosing sensitive information.However, it not an essential predictor.
+
+- **Feature Selection and Importance**
+  - Statistical tests (KS Statistic, Mutual Information) identified the most discriminative features, including `URLSimilarityIndex`, `NoOfExternalRef`, and `LineOfCode`.
+  - Grouping features into behavioral categories (Trust Signals, External Resource Risk, Credential Capture, Obfuscation/Stealth) revealed which tactics carry the strongest predictive power.
+  - Feature importance analysis confirmed that structural and behavioral URL traits are the backbone of phishing detection.
+
+- **Model Evaluation**
+  - Multiple models were trained: Logistic Regression, Naive Bayes, Decision Tree, SVM, Random Forest, and an Ensemble Voting Classifier.
+  - **Random Forest** achieved the highest ROC-AUC among individual models, while the **Ensemble Classifier** delivered superior accuracy and minimized misclassification cost.
+  - Threshold tuning demonstrated the importance of cost-sensitive evaluation, especially in reducing false negatives.
+
+- **Data Quality and Accuracy Investigation**
+  - The unusually high accuracy prompted deeper validation: checks for data leakage, correlation bias, and label distribution.
+  - Dataset quality was confirmed, with sources like PhishTank, OpenPhish, and MalwareWorld providing reliable, well-structured data.
+  - This reinforced the lesson that **high accuracy is not always a win — it is a signal to investigate deeper** and understand the provenance of the dataset.
+
+- **Broader Implications**
+  - URL-based detection models can serve as lightweight, scalable defenses against phishing.
+  - The project highlights the importance of combining **technical rigor** with **critical validation** to ensure trustworthy results.
+  - Future directions include integrating the model into browser extensions, real-time monitoring systems, or combining supervised learning with unsupervised clustering to detect novel phishing patterns.
+
