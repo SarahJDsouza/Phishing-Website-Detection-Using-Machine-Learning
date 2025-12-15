@@ -20,7 +20,7 @@ Dataset source link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+u
 
 ## EDA
 ### Types of threats
-![Alt text]("threat.png")
+![Test Image 7](https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/main/threat.png)
 ### Top Phishing TLDs
 ![Alt text]("https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/main/tld.png")
 ### Feature Selection
