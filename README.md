@@ -22,9 +22,9 @@ Dataset source link: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+u
 ### Types of threats
 ![Test Image 7](https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/main/threat.png)
 ### Top Phishing TLDs
-![Alt text]("https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/main/tld.png")
+![Alt text]("https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/0e6bf65cd96d9dc4869155798bcaedc016555bcf/tld.png")
 ### Feature Selection
-![Alt text]("https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/main/top15.png")
+![Alt text]("https://github.com/SarahJDsouza/Phishing-Website-Detection-Using-Machine-Learning/blob/0e6bf65cd96d9dc4869155798bcaedc016555bcf/top15.png")
 
 ## Model Comparison Table (After Threshold Tuning)
 
