@@ -1,5 +1,9 @@
 # Phishing-Website-Detection-Using-Machine-Learning
 
+## Team Members
+Sambisha Godi, Adam Schuler, Anton Falk, Pin-Chen Kuo, Sarah Dsouza
+
+## Overview
 This project uses the PhiUSIIL Phishing URL Dataset (Prasad & Chandra, 2024), publicly available through the UCI Machine Learning Repository. The dataset was developed as part of the PhiUSIIL framework, which aims to establish a benchmark dataset for phishing detection research. The data was collected using automated web crawlers and feature extraction pipelines that analyzed URL structure, domain information, and webpage HTML content in 2024.
 
 The original dataset was collected from Open PageRank Initiative Anon for legitimate URLs, and PhishTank, OpenPhish, and MalwareWorld for phishing URLs by downloading the webpages.
